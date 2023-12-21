@@ -6,14 +6,14 @@ let glasses = 0
 
 // let glasses = localStorage.getItem('glasses');
 
-let key = new Date().toISOString().slice(0, 10);
+let key = new Date().toLocaleString().slice(0, 10);
 
 setInterval(()=> {
-    if(key !== new Date().toISOString().slice(0, 10)) {
-        key = new Date().toISOString().slice(0, 10)
+    if(key !== new Date().toLocaleString().slice(0, 10)) {
+        key = new Date().toLocaleString().slice(0, 10)
         setCounter(0)
     }
-}, 1000)
+}, 1000*60)
 
 const setCounter = (value) => {
     counter.innerHTML = value;
