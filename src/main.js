@@ -12,6 +12,7 @@ setInterval(()=> {
     if(key !== new Date().toLocaleString().slice(0, 10)) {
         key = new Date().toLocaleString().slice(0, 10)
         setCounter(0)
+        glasses = 0
     }
 }, 1000*60)
 
