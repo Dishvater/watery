@@ -4,15 +4,23 @@ const minus = document.querySelector('.minus--js');
 
 let glasses = 0
 
-const key = new Date().toISOString().slice(0, 10);
+// let glasses = localStorage.getItem('glasses');
 
-if (localStorage.getItem(key)) {
-    glasses = parseInt(localStorage.getItem(key));
-}
+const key = new Date().toISOString().slice(0, 10);
 
 const setCounter = (value) => {
     counter.innerHTML = value;
+    localStorage.setItem(key, value);
 }
+
+if (localStorage.getItem(key)) {
+    glasses = parseInt(localStorage.getItem(key));
+    setCounter(glasses);
+} else {
+    
+}
+
+
 
 plus.addEventListener('click', () => {
     glasses++
