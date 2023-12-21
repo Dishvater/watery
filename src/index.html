@@ -5,6 +5,7 @@
   <title>watery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./index.css" rel="stylesheet">
+  <link rel="manifest" href="./manifest.json">
 </head>
 <body class="bg-black flex flex-col p-8 items-center justify-center min-h-screen w-full ">
         <main>
@@ -14,8 +15,8 @@
                 <div><img alt="water glass" src="water-glass.png"></div>
                 <p class="counter--js absolute z-10 text-gray-600 text-9xl">0</p>
             </div>
-            <button class="plus--js w-auto bg-white m-4 p-4">dodaj szklankę</button>
-            <button class="minus--js w-auto text-red-700">usuń szklankę</button>
+            <button class="plus--js w-auto bg-white m-4 p-4 touch-manipulation">dodaj szklankę</button>
+            <button class="minus--js w-auto text-red-700 touch-manipulation">usuń szklankę</button>
         </div>
     </main>
     <script src="./main.js" type="module"></script>
