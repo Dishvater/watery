@@ -1,0 +1,31 @@
+# Node modules
+node_modules/
+
+# Parcel cache
+.parcel-cache/
+.cache/
+dist/
+
+# Log files
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+
+# IDE-specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Build directories
+/build
+/public/build
+
+# Optional: Exclude specific configuration files
+# parcel-bundler-config.json
+# tailwind-config.js
